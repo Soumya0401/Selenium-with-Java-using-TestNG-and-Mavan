@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="pass data">
+	<test name="signup page">
+		<parameter name="browser" value="chrome"/>
+		<parameter name="key_base_url" value="https://www.flipkart.com"/>
+			<parameter name= "key_name" value="Soumya"/>
+				<parameter name= "key_mobile" value="9988765654"/>
+					<parameter name="key_password" value="123456"/>
+					<classes>
+						<class name="TestFramework.Amazon">
+							<methods>
+								<include name="OpenWebpage"/>
+								<include name="Getdata"/>
+							</methods>
+						</class>
+					</classes>
+				</test>				
+		</suite>
